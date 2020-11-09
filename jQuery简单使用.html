@@ -5,6 +5,24 @@
     <title>one</title>
 </head>
 <body>
-
+    <input type="button" id="setBound" value="set bounds"/>
+    <input type="button" id="setText" value="set text"/>
+    <div></div>
+    <div></div>
+    <div></div>
 </body>
+<script src="../jquery-3.5.0.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#setBound').click(function () {
+            $('div').css('border', '1px solid red');
+        });
+        $('#setText').click(function () {
+            $('div').text('hello');
+        });
+    });
+    $(document).ready(function () {
+       console.log("hello, world");
+    });
+</script>
 </html>
